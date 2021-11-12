@@ -17,10 +17,10 @@
                 Urns &amp; Coffins
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="urnsandcoffins-link">
-                <a href="" class="dropdown-item">Urns</a>
-                <a href="" class="dropdown-item">Coffins</a>
-                <a href="" class="dropdown-item">Alternative Vessels</a>
-                <a href="" class="dropdown-item">All Urns &amp; Coffins</a>
+                <a href="{% url 'products' %}?category=urns" class="dropdown-item">Urns</a>
+                <a href="{% url 'products' %}?category=coffins" class="dropdown-item">Coffins</a>
+                <a href="{% url 'products' %}?category=alternative_vessels" class="dropdown-item">Alternative Vessels</a>
+                <a href="{% url 'products' %}?category=urns,coffins,alternative_vessels" class="dropdown-item">All Urns &amp; Coffins</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Flowers &amp; Tombstones
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="flowersandtombstones-link">
-                <a href="" class="dropdown-item">Flower Arrangments</a>
-                <a href="" class="dropdown-item">Tombstones</a>
-                <a href="" class="dropdown-item">All Flowers &amp; Tombstones</a>
+                <a href="{% url 'products' %}?category=flower_arrangements" class="dropdown-item">Flower Arrangments</a>
+                <a href="{% url 'products' %}?category=tombstones" class="dropdown-item">Tombstones</a>
+                <a href="{% url 'products' %}?category=flower_arrangements,tombstones" class="dropdown-item">All Flowers &amp; Tombstones</a>
             </div>
         </li>
 
@@ -40,10 +40,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
