@@ -18,8 +18,8 @@
             <div class="dropdown-menu border-0" aria-labelledby="urnsandcoffins-link">
                 <a href="{% url 'products' %}?category=urns" class="dropdown-item">Urns</a>
                 <a href="{% url 'products' %}?category=coffins" class="dropdown-item">Coffins</a>
-                <a href="{% url 'products' %}?category=alternative_vessels" class="dropdown-item">Alternative Vessels</a>
-                <a href="{% url 'products' %}?category=urns,coffins,alternative_vessels" class="dropdown-item">All Urns &amp; Coffins</a>
+                <a href="{% url 'products' %}?category=other" class="dropdown-item">Other</a>
+                <a href="{% url 'products' %}?category=urns,coffins,other" class="dropdown-item">All Urns &amp; Coffins</a>
             </div>
         </li>
 
@@ -28,9 +28,9 @@
                 Flowers &amp; Tombstones
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="flowersandtombstones-link">
-                <a href="{% url 'products' %}?category=flower_arrangements" class="dropdown-item">Flower Arrangments</a>
+                <a href="{% url 'products' %}?category=flowers" class="dropdown-item">Flowers</a>
                 <a href="{% url 'products' %}?category=tombstones" class="dropdown-item">Tombstones</a>
-                <a href="{% url 'products' %}?category=flower_arrangements,tombstones" class="dropdown-item">All Flowers &amp; Tombstones</a>
+                <a href="{% url 'products' %}?category=flowers,tombstones" class="dropdown-item">All Flowers &amp; Tombstones</a>
             </div>
         </li>
 
