@@ -8,6 +8,7 @@ def bag_contents(request):
 
     bag_items = []
     total = 0
+    tax= Decimal(settings.STANDARD_TAX / 100)
     product_count = 0
     bag = request.session.get('bag', {})
 
@@ -33,12 +34,14 @@ def bag_contents(request):
                     'size': size,
                 })
 
-    grand_total = total * Decimal(settings.STANDARD_TAX / 100)
+    item_tax = total * tax
+    grand_total = total + item_tax
 
     context = {
         'bag_items': bag_items,
         'total': total,
         'product_count': product_count,
+        'item_tax': item_tax,
         'grand_total': grand_total,
     }
     return context
