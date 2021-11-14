@@ -33,8 +33,8 @@ def all_products(request):
             products = products.order_by(sortkey)
             
         if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
+            categories = request.GET.get('category')
+            products = Product.objects.filter(category__name__icontains=categories)
             categories = Category.objects.filter(name__in=categories)
 
         if 'q' in request.GET:
