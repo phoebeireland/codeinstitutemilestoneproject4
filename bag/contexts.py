@@ -9,6 +9,7 @@ def bag_contents(request):
     bag_items = []
     total = 0
     tax= Decimal(settings.STANDARD_TAX / 100)
+    delivery= Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
     product_count = 0
     bag = request.session.get('bag', {})
 
@@ -35,13 +36,15 @@ def bag_contents(request):
                 })
 
     item_tax = total * tax
-    grand_total = total + item_tax
+    delivery_cost = total * delivery
+    grand_total = total + item_tax + delivery_cost
 
     context = {
         'bag_items': bag_items,
         'total': total,
         'product_count': product_count,
         'item_tax': item_tax,
+        'delivery_cost': delivery_cost,
         'grand_total': grand_total,
     }
     return context
