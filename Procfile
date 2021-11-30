@@ -1,1 +1,1 @@
-web: gunicorn evergreenfuneralhome.wsgi:application
+web: gunicorn evergreen.wsgi:application
