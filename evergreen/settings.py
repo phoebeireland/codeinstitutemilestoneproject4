@@ -175,7 +175,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = (os.path.join(BASE_DIR, 'staticfiles'))
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -216,3 +215,5 @@ DEFAULT_FROM_EMAIL = 'evergreenfuneralhome@example.com'
 
 # fix the stylesheet MIME type problem with https://stackoverflow.com/questions/59972571/mime-type-issue-loading-css-with-django-app
 django_heroku.settings(locals())
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
