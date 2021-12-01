@@ -14,6 +14,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 import dj_database_url
+import django_heroku
 
 load_dotenv()
 
@@ -193,3 +194,6 @@ STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 DEFAULT_FROM_EMAIL = 'evergreenfuneralhome@example.com'
+
+
+django_heroku.settings(locals())
