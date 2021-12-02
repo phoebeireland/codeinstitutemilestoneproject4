@@ -39,10 +39,13 @@
             </div>
         </li>
 
-        <li class="nav-item">
-            <a href="{% url 'condolences' %}" class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Condolences
             </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="{% url 'condolences' %}" class="dropdown-item">Offer Condolences</a>
+            </div>
         </li>
     </ul>
 </div>
