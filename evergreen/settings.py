@@ -32,6 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+# When deploying to Heroku, this should be set to false. When working locally, set it to True. Technically, this should be an environment variable.
 
 ALLOWED_HOSTS = ['evergreenfuneralhome.herokuapp.com', 'localhost']
 
