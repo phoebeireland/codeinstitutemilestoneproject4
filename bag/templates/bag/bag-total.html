@@ -1,8 +1,9 @@
+{% load humanize %}
 <tr>
     <td colspan="5" class="pt-5 text-right">
-        <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-        <h6>Tax: ${{ item_tax|floatformat:2 }}</h6>
-        <h6>Delivery: ${{ delivery_cost|floatformat:2 }}</h6>
-        <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+        <h6><strong>Bag Total: ${{ total|floatformat:2|intcomma }}</strong></h6>
+        <h6>Tax: ${{ item_tax|floatformat:2|intcomma }}</h6>
+        <h6>Delivery: ${{ delivery_cost|floatformat:2|intcomma }}</h6>
+        <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2|intcomma }}</strong></h4>
     </td>
 </tr>
