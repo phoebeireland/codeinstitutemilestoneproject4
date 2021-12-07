@@ -34,6 +34,7 @@
                 <div class="card-body">
                     <h2 class="card-title">{{ post.title }}</h2>
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on|naturalday }} </p>
+                    <hr class="mb-1">
                     <p class="card-text">{{post.content|slice:":200" }}</p>
                     <a href="{% url 'post_details' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
                 </div>
