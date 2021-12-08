@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'storages',
     'condolences',
     'django.contrib.humanize',
+    'about',
 ]
 
 MIDDLEWARE = [
