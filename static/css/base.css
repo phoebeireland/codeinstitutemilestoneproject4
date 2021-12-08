@@ -5,7 +5,10 @@ html {
 body {
 	background: url('/media/homepage_background.jpg') no-repeat center center fixed;
 	background-size: cover;
+    min-height: 100vh;
     height: calc(100vh - 164px);
+    display: flex;
+    flex-direction: column;
     color: #555;
     font-family: "Lato";
 }
