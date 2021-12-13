@@ -4,3 +4,4 @@ __pycache__
 .env
 evergreenenv
 variables.env
+new_user_credentials.csv
