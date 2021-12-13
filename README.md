@@ -1,6 +1,6 @@
 # Evergreen Funeral Home
 
-* [Link to deployed website]()
+* [Link to deployed website](https://evergreenfuneralhome.herokuapp.com/)
 * [Link to github repository](https://github.com/phoebeireland/codeinstitutemilestoneproject4)
 
 
@@ -17,7 +17,7 @@
 
 ## The Project- Purpose and Business Goals
 
-This Website aims to inform users about the Evergreen Funeral Home, as well as offering them the ability to browse various funeral options such as urns, cremation and coffins. It also allows users to schedule an appointment with the funeral home to make arrangements for themselves or a family member. It also includes a handy "Calculate the approximate price of your funeral" tool that users can use to estimate the cost of their funeral based on the options that they choose. 
+This Website aims to inform users about the Evergreen Funeral Home, as well as offering them the ability to browse various funeral options such as urns, cremation and coffins. As it is, the website is mostly store-based, with the main focus on the funeral products that are available for purchase. The main purpose of the website is commercial, though the people visiting the website can also find out some information regarding the funeral home, as well as offer condolences on the blog page that posts news of local deaths and upcoming services.
 
 ## User Stories
 A New User to the site wants:
@@ -32,7 +32,7 @@ A Returning User to the site wants:
 
 ## Design Choices
 
-The overall feel of the Website should be 
+The overall feel of the Website should be somber and clean.
 
 ### Font
 
@@ -192,8 +192,6 @@ To Clone this repository using Visual Studio Code:
 Created by Phoebe Ireland
 
 The content of this website was created by Phoebe Ireland, with the exception of the following:
-* [Google Fonts](https://fonts.google.com/)
-  * Used to apply the Hahmlet font to all pages
 * [Unsplash](https://unsplash.com/)
   * Used for the images found on the site
 * [Bootstrap](https://getbootstrap.com/)
