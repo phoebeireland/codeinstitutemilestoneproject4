@@ -47,7 +47,7 @@ def post_details(request, id):
 def add_post(request):
     """ Add a post to the blog """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Sorry, only admin can do that.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -73,7 +73,7 @@ def add_post(request):
 def edit_post(request, id):
     """ Edit a post in the blog """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Sorry, only admin can do that.')
         return redirect(reverse('home'))
 
     post = get_object_or_404(Post, pk=id)
@@ -82,7 +82,7 @@ def edit_post(request, id):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated post!')
-            return redirect(reverse('post_list'))
+            return redirect(reverse('condolences'))
         else:
             messages.error(request, 'Failed to update product. Please ensure the form is valid.')
     else:
@@ -102,7 +102,7 @@ def edit_post(request, id):
 def delete_post(request, id):
     """ Delete a post from the blog """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Sorry, only admin can do that.')
         return redirect(reverse('condolences'))
 
     product = get_object_or_404(Post, pk=id)
