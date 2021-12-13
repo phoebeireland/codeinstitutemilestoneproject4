@@ -54,8 +54,8 @@ def add_post(request):
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save()
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('post_list', args=[post.id]))
+            messages.success(request, 'Successfully added post!')
+            return redirect(reverse('condolences', args=[post.id]))
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
@@ -82,12 +82,12 @@ def edit_post(request, id):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated product!')
-            return redirect(reverse('post_list', args=[id]))
+            return redirect(reverse('post_list', args=[post.id]))
         else:
             messages.error(request, 'Failed to update product. Please ensure the form is valid.')
     else:
         form = PostForm(instance=post)
-        messages.info(request, f'You are editing {post.name}')
+        messages.info(request, f'You are editing {post.title}')
 
     template = 'condolences/edit_post.html'
     context = {
@@ -103,9 +103,9 @@ def delete_post(request, id):
     """ Delete a post from the blog """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+        return redirect(reverse('condolences'))
 
     product = get_object_or_404(Post, pk=id)
     product.delete()
-    messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))
+    messages.success(request, 'Post deleted!')
+    return redirect(reverse('condolences'))
