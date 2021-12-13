@@ -36,11 +36,11 @@
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on|naturalday }} </p>
                     <hr class="mb-1">
                     <p class="card-text">{{post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_details' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+                    <a href="{% url 'post_details' post.id  %}" class="btn btn-primary">Read More &rarr;</a>
                 </div>
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
-                    <a href="">Edit</a> | 
+                    <a href="{% url 'edit_post' post.id %}">Edit</a> | 
                     <a class="text-danger" href="">Delete</a>
                 </small>
                 {% endif %}
