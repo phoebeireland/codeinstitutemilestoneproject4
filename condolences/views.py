@@ -55,7 +55,7 @@ def add_post(request):
         if form.is_valid():
             post = form.save()
             messages.success(request, 'Successfully added post!')
-            return redirect(reverse('condolences', args=[post.id]))
+            return redirect(reverse('condolences'))
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
@@ -81,8 +81,8 @@ def edit_post(request, id):
         form = PostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated product!')
-            return redirect(reverse('post_list', args=[post.id]))
+            messages.success(request, 'Successfully updated post!')
+            return redirect(reverse('post_list'))
         else:
             messages.error(request, 'Failed to update product. Please ensure the form is valid.')
     else:
