@@ -32,11 +32,11 @@ A Returning User to the site wants:
 
 ## Design Choices
 
-The overall feel of the Website should be somber and clean.
+The overall feel of the Website should be somber and clean. As a lot of the code for the project was modeled after the Boutique Ado project that was shown in the Code Institute videos, styilistically, not much differs between that site and this funeral site. Obviously things were altered to make the design fit a funeral website rather than a clothing and housewares shop, but the main style features remained largely the same. 
 
 ### Font
 
-The font used on this Website is 
+The font used on this Website is Lato. Rather than picking a different, more fancy font from Google Fonts, I felt that the built-in font of Lato fit the website's overall aesthetic to the degree that looking elsewhere was not necessary. 
 
 
 ### Colours
@@ -90,13 +90,8 @@ Using the Chrome Inspect tool, the following aspects of the website were tested:
 * The footer remained at the bottom of the pages when viewed on a smaller screen.
 * The Navbar collapsed correctly when viewed on a smaller screen, and the correct code was there to enable to collapsed menu to expand when clicked. 
 * The text within the boxes were all still correctly centered on smaller screens just as they were on the larger ones. 
-* On the About page, the three boxes at the bottom stacked correctly on smaller screens. 
-* On the Forum and Companies pages, the Forum post cards and the Company cards all stacked correctly on smaller screens. 
+* 
 
-The EmailJS extenstion was tested using a sample email address and sample message.
-* The result of this test was that the EmailJS service sent an email to the email address of the webpage saying that a message was submitted. This message also contained the contents of the submitted form. 
-* Also, an Auto-Reply email was successfully sent to the email address provied in the form. 
-* This process was tested for the Contact Us form and the Register Company form, as these were the two forms connected to the EmailJS service, as adding another form/service on the EmailJS site would have required payment. 
 
 
 ## Testing User Stories
