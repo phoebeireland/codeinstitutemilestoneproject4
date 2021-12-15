@@ -44,31 +44,32 @@ The overall feel of the Website should be somber and clean. As a lot of the code
 
 ### Font
 
-The font used on this Website is Lato. Rather than picking a different, more fancy font from Google Fonts, I felt that the built-in font of Lato fit the website's overall aesthetic to the degree that looking elsewhere was not necessary. 
+The font used on this Website is Lato. Rather than picking a different, more fancy font from Google Fonts, I felt that the built-in font of Lato fit the website's overall aesthetic to the degree that looking elsewhere was not necessary. The alternative font that was considered, 'Zen Antique', was deemed to be unsuitable for the overall aestethic of the website, and as such, was scrapped for the original choice of 'Lato'.
 
 
 ### Colours
 
 The main colours used on the site are:
-* 
-* 
-* 
+* Black, for the colour of the profile and shopping icons at the top of the page, as well as some of the navigational buttons across the site.
+* Hex color `#555` for the remaining font present elsewhere on the site.
+* White, for the font on the buttons which have black backgrounds, as well as for the beneral background overlay colour on all of the pages that are not the `index.html` page.
+* `rgb(14, 221, 66)` for the color of the footer elements when they are not being hovered over, and `rgb(179, 1, 1)` for the footer elements when they are being hovered over.
 
 
 ### Styling
 
-
+The Website is built to be a funeral website. As such, loud, brash, and gaudy stylistic elements would be wildly inappropriate considering the purpose of the website. Due to this, the website has a clean and simple look that, with the white background and the grey font colour, aims to be reminiscent of marble. Funerals and death in general are somber matters, so to have a website that reflects the seriousness of the topic at hand seemed very important. An additional Django library was used to change alter the look of both the prices of products and the provided dates and times for the blog. The library used was [django.contrib.humanize](https://docs.djangoproject.com/en/3.2/ref/contrib/humanize). This was used to add commas to the individual and overall prices of products that were over a thousand dollars, as django did not automatically add one in. It also altered the dates on the blog posts that were automatically added when the post was submitted to the website. These changes were deemed necessary to improve the ease of viewing for any user, as they reflected a more natural way of processing the secific information provided.
 
 
 ## Wireframe Designs
 Provided additional information regarding the wireframes below each picture. Refer to them to explain where a wireframe may differ from the published product or for choices behind the designs.
+As will be noticed, as the site is modeled after the Boutique Ado project supplied by Code Institute, the wireframes provided reflect this. The pages in which they differ are the original pages- the blog pages and the blog comment pages.
 
 
 ### Homepage
-![Wireframe of the Homepage](static/images/homepagewireframe.jpg "wireframe of the main hopmepage for the site")
+![Wireframe of the Homepage](static/wireframes/homepagewireframe.jpg "wireframe of the main hopmepage for the site")
 
-This image shows the initial idea for the main page of the website. This is the page that the users would see if they were not logged in or they did not yet have an account.
-The homepage would only change slightly if the user did have an account and was logged in- ie. the two card boxes with information and buttons would change accordingly if a user was logged into their account. In addition, the navbar at the top would also display slightly different options depending on whether the user was logged in or not. 
+This image shows the initial idea for the main page of the website. This is the page that the users would see upon inital entry to the website. It is very similar to that of the Boutique Ado page. The places where they differ are in the contents of the navigation bar and the large image that is in the middle of the page.
 
 
 
