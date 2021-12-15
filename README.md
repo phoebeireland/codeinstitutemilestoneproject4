@@ -17,22 +17,30 @@
 
 ## The Project- Purpose and Business Goals
 
-This Website aims to inform users about the Evergreen Funeral Home, as well as offering them the ability to browse various funeral options such as urns, cremation and coffins. As it is, the website is mostly store-based, with the main focus on the funeral products that are available for purchase. The main purpose of the website is commercial, though the people visiting the website can also find out some information regarding the funeral home, as well as offer condolences on the blog page that posts news of local deaths and upcoming services.
+This Website aims to inform users about the Evergreen Funeral Home, as well as offering them the ability to browse various funeral options such as urns, cremation and coffins. As it is, the website is mostly store-based, with the main focus on the funeral products that are available for purchase. The main purpose of the website is commercial, though the people visiting the website can also find out some information regarding the funeral home, as well as offer condolences on the blog page that posts news of local deaths and upcoming services. The website is accessible to users who have a 'profile' on the site and to those who do not. The difference between a user who has an account versus one who does not, is that the user with an account is able to access their profile and review past orders made through the site. Although a user may use the condolences blog with an account, an account is not necessary for leaving a comment. Furthermore, for a user who is a superuser, they gain further access to the admin side of the website, where they can approve new comments to the condolences blog posts. Furthermore, when a user is logged into the superuser accont, they had an additional option in the "My Profile" dropdown menu for 'Product Management', where they are able to add a new product without haveing to navigate to the full admin interface. Another unique ability for a superuser is that on both the product pages and the blog pages, they are able to edit, delete and, in the case of the blog, they are able to add a new blog post. Once again, this option bypasses the need for a superuser to go to the full admin dashboard to perform these functions.
+
 
 ## User Stories
 A New User to the site wants:
-1. 
-2. 
-3. 
+1. An easily navigatable website and shopping area
+2. The ability to buy products for an upcoming funeral
+3. An area to find out a bit of information about the funeral home and those who work in it
+4. A nice arrangement of product options
+5. The ability to see what services are coming up, and offer condolences to those who died
+6. The ability to pay on the website itself, and be able to recieve confirmation emails regarding the order
+7. The ability to create an account to keep track of any purchases made
 
 A Returning User to the site wants:
-1. 
-2. 
-3. 
+1. An easily navigatable website so I can find my created profile
+2. The ability to look back on previous orders that were made
+3. The ability to save contact/delivery details for an easier checkout in the future
+4. The ability to search for a product or category of products if the specific name of a previously found product escapes my mind
+5. The ability to sort the products based on certaion criteria. (ie. by price or name)
+
 
 ## Design Choices
 
-The overall feel of the Website should be somber and clean. As a lot of the code for the project was modeled after the Boutique Ado project that was shown in the Code Institute videos, styilistically, not much differs between that site and this funeral site. Obviously things were altered to make the design fit a funeral website rather than a clothing and housewares shop, but the main style features remained largely the same. 
+The overall feel of the Website should be somber and clean. As a lot of the code for the project was modeled after the Boutique Ado project that was shown in the Code Institute videos, styilistically, not much differs between that site and this funeral site. Obviously elements were altered to make the design fit a funeral website rather than a clothing and housewares shop, but the main style features remained largely the same. 
 
 ### Font
 
