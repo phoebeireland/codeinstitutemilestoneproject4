@@ -273,7 +273,7 @@ a.category-badge > span.badge:hover {
       }
       
       .footer__list-item-link {
-          color: rgb(14, 221, 66);
+          color: rgba(97, 97, 97, 0.89);
       }
       
       .footer__list-item-link:hover {
