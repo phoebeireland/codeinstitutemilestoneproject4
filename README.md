@@ -53,7 +53,7 @@ The main colours used on the site are:
 * Black, for the colour of the profile and shopping icons at the top of the page, as well as some of the navigational buttons across the site.
 * Hex color `#555` for the remaining font present elsewhere on the site.
 * White, for the font on the buttons which have black backgrounds or elsewhaere on the site that has a black background, as well as for the general background overlay colour on all of the pages that are not the `index.html` page.
-* `rgb(14, 221, 66)` for the color of the footer elements when they are not being hovered over, and `rgb(179, 1, 1)` for the footer elements when they are being hovered over.
+* `rgba(97, 97, 97, 0.89)` for the color of the footer elements when they are not being hovered over, and `rgb(179, 1, 1)` for the footer elements when they are being hovered over.
 
 
 ### Styling
