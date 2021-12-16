@@ -90,7 +90,7 @@ Similar to the way the general product page design did not change per product ca
 The general design of the condolences blog was taken from the design provided on [Django Central](https://djangocentral.com/building-a-blog-application-with-django/). The blog page was simple, and adapted to fit the overall look of the Evergreen website to which it was being added. On this page, superusers would be able to add a blog post detailing the passing of a member of the community, and anyone who visited the site, regardless of whether or not they had an account on the website would be able to view the post and offer condolences on the specific post page. If the superuser is logged in, they also have the ability to edit or delete any blog post on the site. Those capabilites were available only to those users who were logged in as a superuser, and were provided as two small links under the main text of the post to which they related. This was another of the pages that used the [django.contrib.humanize](https://docs.djangoproject.com/en/4.0/ref/contrib/humanize/) filter. The `naturalday` filter was applied to the date on the blog post that indicated when each blog post was added to the website. This was added for ease of reading, as it changed the provided date from the strict date and time posted, to "yesterday" or "today" if the posts had been added ether the same day as it was being viewed, or on the previous day. 
 
 
-### Condolences Commment Page Design
+### Condolences Comment Page Design
 ![Wireframe of the Condolences comment page](static/wireframes/condolencescommentpage.jpg "wireframe of the condolences comment page for the site")
 
 The general design of the condolences comment page was taken from the design provided on [Django Central](https://djangocentral.com/building-a-blog-application-with-django/), and further expanded with the design and code provided on [this page](https://djangocentral.com/creating-comments-system-with-django/). This page has the full condolences message, as the general blog page only has the first few words of the message. The sidebar on the side has instructions on how to add a comment, and in the initial design, the comments form is underneath the sidebar, but in the final design the form ended up being under the comments area, which was under the initial condolences message. Similar to the Condolences page, the post page makes use of [django.contrib.humanize](https://docs.djangoproject.com/en/4.0/ref/contrib/humanize/)'s `naturalday` filter. to alter the timestamp on the comments that are added. One element of the comments form that came with the code that was taken from Django Central, was the fact that once a user pressees "submit", the comment is added to the database, and a superuser has to navigate to the admin dashboard in order to approve the message that was submitted. Although this may seem somewhat tedious, this seemed like a beneficial feature for the website to have, since it would allow the superuser to filter out any spam messages or other messages that could reflect badly on the site, since the blog pages are accessible to any person who accessed the site. 
@@ -100,6 +100,27 @@ The general design of the condolences comment page was taken from the design pro
 ![Wireframe of the About Us page](static/wireframes/aboutuspage.jpg "wireframe of the About Us page for the site")
 
 The design for the About Us Page was very simple, and ended up combining the "About Us" information with the "Our Team" information, as it didn't seem necessary to separate those two into their own pages. This way, the page looks more full, since there is an additional paragraph of writing that would not have otherwise been there. Since this page was fairly simple in design, I felt that the overlay that was blocking the background image of the white flower that was present on the homepage of the website would be appropriate to add back to this page, rather than leaving it with the white background or adding a separate picture to the page.
+
+### Login/Register Page Design
+![Wireframe of the Login and Register page](static/wireframes/loginregisterpage.jpg "wireframe of the Login and Register page for the site")
+
+This was the initial design for both the login in and the register account pages. However, they were controlled by the allauth template once that was installed, and I did not alter the template that was already there. As it turns out, there was not much difference between the initial design and what turned out to be published on the site. 
+
+
+### Shopping Bag Page Design
+![Wireframe of the Shopping Bag page](static/wireframes/shoppingbagpage.jpg "wireframe of the Shopping Bag page for the site")
+
+
+### Checkout Page Design
+![Wireframe of the Checkout page](static/wireframes/checkoutpage.jpg "wireframe of the Checkout page for the site")
+
+
+### Order Confirmation Page Design
+![Wireframe of the Order Confirmation page](static/wireframes/orderconfirmationpage.jpg "wireframe of the Order Confirmation page for the site")
+
+
+### Profile Page Design
+![Wireframe of the Profile page](static/wireframes/profilepage.jpg "wireframe of the profile page for the site")
 
 
 
