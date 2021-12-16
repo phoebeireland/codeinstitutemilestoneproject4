@@ -179,24 +179,27 @@ When a user makes a profile, they are able to save their contact details in a fo
 
 ### Condolences Comment Page
 * The page has a similar format to the previous page in that there are two main columns of content. The sidebar is still small and on the right side of the screen. It contains instructions on how to add a comment to the post.
-* 
-* 
+* The card with the condolence message is shown here in its entirety. It also contains the name of the user who posted the message, as well as the date on which it was posted.
+* Below the message, is the comment area. This area shows the user how many comments are already on the page as well as displaying the comment messages.
+* At the bottom of the page is the form that allows users to attach a comment. This form consists of 3 fields- the commenter's name, email and the message they would like to be displayed on the page. At the bottom of the form is the submit button that will add the comment to the page.
+* If the user is a superuser, on the main post block, they have the ability to edit the content of rthe condolence message or delete the post entirely.
+* On smaller screens the elements stack.
 
 
 ### About Us Page
-* 
-* 
-* 
+* This page has two cards that are side-by-side on larger screens and that stack on smaller ones.
+* The card on the left has information regarding the funeral home in general, while the right card offers more specific information regarding the people who work at the funeral home.
 
 
 ### Login/ Register Page
-* 
-* 
-* 
+* The login and register pages are very similar in design. The main difference between the two is that the Register page has more form entry fields than the login form. The login form asks for the username and password associate with the account, while the register page asks for an email address too.
+* The login page also has a message at the top of the login form that says that if a person is trying to login but does not yet have an account, that they need to sign up first. The words "sign up" in the message are a link that will redirect the user to the register page.
+* The register page also has a message at the top of the register form that says that if a person is trying to register a new account but already has an account, then they should go to the sign in page. The words "sign in" are a link that redirects the user to the login page.
+* On smaller screens, the navbar collapses and the form centers on the page to fit a smaller screen.
 
 
 ### Shopping Bag Page
-* 
+* This page shows users what items are currently in their shopping bag waiting to be purchased, and gives them the option to either return to shopping or to proceed to checkout.
 * 
 * 
 
