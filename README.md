@@ -233,6 +233,14 @@ When a user makes a profile, they are able to save their contact details in a fo
 
 
 
+# Data Modeling
+### Products Models
+Products relate to one another because they can all be put into a cart and require being split into further sub-categories, and all have certain similar attributes attched to them, such as a price, name, SKU, and size. 
+
+### Condolences and Comments Models
+Condolences relate to one another in the fact that they all have to have a body message area, and are all required to have a "created by:" and a date created specified. Condolences and comments are related to one another through post ids, in the same way blog posts and comments are related (after all, the condolences adn comments are modeled after blog posts and blog comments). 
+
+
 
 # Testing the Site
 
