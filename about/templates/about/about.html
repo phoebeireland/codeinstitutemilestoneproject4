@@ -2,6 +2,14 @@
 {% load static %}
 {% load humanize %}
 
+{% block extra_css %}
+<style>
+    hr {
+        background-color: #ccc;
+    }
+</style>
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -11,34 +19,38 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
 <div class="container">
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4 text-center">About Us & Our Team</h2>
+            <h2 class="logo-font mb-4 text-center text-white">About Us & Our Team</h2>
             <hr>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6">
-            <h4 class="logo-font mb-4 text-center">About Us</h4>
-            <p>
-                First established in 1987, Evergreen Funeral Home has been the number one funeral care service in town for the last 20 years. 
-                Our motto is: "Death isn't pretty, but your funeral can be!", and all of our staff members take this to heart. 
-                We know that the death of a loved one can be a tough time for most families, so we do our best to alleviate the stress of 
-                planning a funeral. 
-            </p>
+        <div class="col-lg-6 card">
+            <div class="card-body">
+                <h4 class="logo-font mb-4 text-center">About Us</h4>
+                <p>
+                    First established in 1987, Evergreen Funeral Home has been the number one funeral care service in town for the last 20 years.
+                    Our motto is: "Death isn't pretty, but your funeral can be!", and all of our staff members take this to heart.
+                    We know that the death of a loved one can be a tough time for most families, so we do our best to alleviate the stress of
+                    planning a funeral.
+                </p>
+            </div>
         </div>
-        <div class="col-lg-6">
-            <h4 class="logo-font mb-4 text-center">Our Team</h4>
-            <p>
-                At Evergreen Funeral Home, our team of dedicated staff will work to make your funeral the best funeral it can be. 
-                Our Funeral Director, John Bingham, has been employed by Evergreen for over ten years, and leads a small staff of four. 
-                <br>
-                Recently, we hired top funeral accessory designer, Madison Keeley, to design our own exclusive line of funeral products.
-                Her latest designs can be found at our online shop. Encase your dearly departed in one of her newest designs today.
-            </p>
+
+        <div class="col-lg-6 card">
+            <div class="card-body"></div>
+                <h4 class="logo-font mb-4 text-center">Our Team</h4>
+                <p>
+                    At Evergreen Funeral Home, our team of dedicated staff will work to make your funeral the best funeral it can be.
+                    Our Funeral Director, John Bingham, has been employed by Evergreen for over ten years, and leads a small staff of four.
+                    <br>
+                    Recently, we hired top funeral accessory designer, Madison Keeley, to design our own exclusive line of funeral products.
+                    Her latest designs can be found at our online shop. Encase your dearly departed in one of her newest designs today.
+                </p>
+            </div>
         </div>
     </div>
 </div>
