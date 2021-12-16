@@ -143,30 +143,42 @@ When a user makes a profile, they are able to save their contact details in a fo
 
 ### The Home Page
 * This page is the first page that the users see upon entering the site, and contains a searchbar at the top and a navbar that can be used to go to different pages on the site.
+* The navbar is a dropdown navbar that expands to give even more specific options for pages for the user to visit. For example, the "Urns and Coffints" navbar link expands to allow the user to go to the specific "Urns" page or the "Coffins" Page, or the "Miscellaneous" page.
 * There are also the two icons that lead users to the login and register pages to createe or login to their profile, and to access the shopping bag with all of their current purchases. 
 * The middle of the screen is fairly simple, with a large background image and a single quote. There is also a button that will direct a user to the shop, so that they can browse the products that are available.
 * On smaller screens, the navbar will collapse and the elements at the top of the page will stack.
 
 
 ### Products Page
-* 
-* 
-* 
+* The general design of the product pages is the same across all of teh different category pages. At the top of the page is a header that specifies which of the pages the user is currently on (ie. the Urns page, or Products Page). 
+* The page contains a clickable image of the product that can be used to go to the prodcut details page. 
+* Underneath the image of the product is the name of the specific product, and the sales price, without tax added.
+* The page contains information for all of the products that are relevant to the category specified. 
+* The user has the ability to sort the products on the page by further specifications such as by price, by name, or by category name.
+* The page also alerts the user as to how many products are available on that page.
+* If a user is a superuser, then there are additional links at the bottom of each product that allows the superuser to edit or delete the product.
+* On smaller screens, the elements stach upon each other to allow for easier viewing.
 
 ### Product Detail Page
-* 
-* 
-* 
+* On the left side of this page is a larger image of the product being looked at, and on the right side of the page are further details about the product.
+* There is a short description of the product being viewed, as well as restating the name of the product as well as the price of the object. 
+* Below the product description is the dropdown menu that allows a user to change the size of teh product they are interesting in purchasing.
+* Below the size, is the quantity adjuster, where a user can opt to add more than one of the same items to their shopping bag. 
+* Once the user has selected the size and quantity of the product, there is a button that allows th user to add the item(s) to their bag.
+* One an item is added to the bag, a message in the top right corner of their screen pops up and lets the user know that the item was added successfully to their bag.
+* On smaller screens, the elements collapse to fit the smaller screen.
 
 
 ### Condolences Blog Page
-* 
-* 
-* 
+* This blog has a main column with the blog posts, and a small sidebar with instructions on how to add a condeolence comment to the specific blog psot.
+* If a user is a superuser, at the bottom of each blog preview, there are two links to edit or delete the blog post. 
+* If a user is a superuser, there is a button beneath the sidebar that allows them to add a post without having to go all the way to the admin dashboard. These buttons and links are not available if the user is not logged into the superuser account.
+* The blog posts that are added to the blog are shown on this page in cards that offer a short excerpt of the text of the full post as well as a the name of the poster, and the date on which the post was added to the blog.
+* Below the sample of blog text is a button labeled "Read More" that users can use to continue to a page that contains only the blog post and gives them the ability to add their comment to the post.
 
 
 ### Condolences Comment Page
-* 
+* The page has a similar format to the previous page in that there are two main columns of content. The sidebar is still small and on the right side of the screen. It contains instructions on how to add a comment to the post.
 * 
 * 
 
@@ -216,6 +228,8 @@ All HTML pages and CSS files were tested using the HTML and CSS Validator from W
 * Link to the [HTML Validator](https://validator.w3.org./) used
 * Link to the [CSS Validator](https://jigsaw.w3.org/css-validator/) used
 
+As the HTML pages on VSCode were written in Django, this made validating the code with the validators significatly more difficult. To get around this, I opened each page and copied over the link for the deployed page and submitted it to the HTML validator.
+
 
 ## Manual Testing
 
@@ -223,15 +237,16 @@ Using the Chrome Inspect tool, the following aspects of the website were tested:
 * All of the contents on the pages of the website collapsed correctly when viewed on a smaller screen.
 * The footer remained at the bottom of the pages when viewed on a smaller screen.
 * The Navbar collapsed correctly when viewed on a smaller screen, and the correct code was there to enable to collapsed menu to expand when clicked. 
-* The text within the boxes were all still correctly centered on smaller screens just as they were on the larger ones. 
-* 
+* The text within the blog boxes were all still correctly centered on smaller screens just as they were on the larger ones. 
+* On the About page, the two card stacked properly when the page was viewed on a smaller screen.
+* The blog post cards all stacked and minimised correctly when viewed on a smaller screen.
 
 
 
 ## Testing User Stories
 ### New User:
-1. An easily navigatable website and shopping area
-2. The ability to buy products for an upcoming funeral
+1. Upon entering the webiste, a navbar is clearly visible at the top of the page, and is accessible across all of the pages of the website. IN addition, there is a search bar at the top of the page which can take a user to a specific product or group of products, based on what the y type intyo the search box.
+2. The shop is available through both the main page via the "Visit Shop" button in the middle of the page, and through the various links in the navbar. Also, specific categories of products are available in the navbar, which allows a user to go to specific groups of products, rather than having to sort through the entire list of the products every time.
 3. An area to find out a bit of information about the funeral home and those who work in it
 4. A nice arrangement of product options
 5. The ability to see what services are coming up, and offer condolences to those who died
