@@ -142,9 +142,71 @@ When a user makes a profile, they are able to save their contact details in a fo
 * When a user adds a product to their bag, or alters their bag in any way, a message box pops up in the top right corner of their screen alerting them of the changes being made.
 
 ### The Home Page
+* This page is the first page that the users see upon entering the site, and contains a searchbar at the top and a navbar that can be used to go to different pages on the site.
+* There are also the two icons that lead users to the login and register pages to createe or login to their profile, and to access the shopping bag with all of their current purchases. 
+* The middle of the screen is fairly simple, with a large background image and a single quote. There is also a button that will direct a user to the shop, so that they can browse the products that are available.
+* On smaller screens, the navbar will collapse and the elements at the top of the page will stack.
+
+
+### Products Page
 * 
 * 
 * 
+
+### Product Detail Page
+* 
+* 
+* 
+
+
+### Condolences Blog Page
+* 
+* 
+* 
+
+
+### Condolences Comment Page
+* 
+* 
+* 
+
+
+### About Us Page
+* 
+* 
+* 
+
+
+### Login/ Register Page
+* 
+* 
+* 
+
+
+### Shopping Bag Page
+* 
+* 
+* 
+
+
+### Checkout Page
+* 
+* 
+* 
+
+
+### Order Confirmation Page
+* 
+* 
+* 
+
+
+### Profile Page
+* 
+* 
+* 
+
+
 
 
 # Testing the Site
