@@ -295,7 +295,7 @@ Using the Chrome Inspect tool, the following aspects of the website were tested:
 # Deployment
 The Website was created in Visual Studio Code, version controlled with Git and hosted on Heroku.
 
-Steps to publish website to Heroku:
+### Steps to publish website to Heroku:
 1. On Heroku, press "Create a New App"
 2. On the new page, type in the app name and select the region for the app. Keep in mind that the app name must be completely original. Then press "Create".
 3. Once the page has loaded, under the "Deploy" menu, select "Connect to GitHub", and enter the name of the repository to connect it to Heroku. 
@@ -309,20 +309,20 @@ Steps to publish website to Heroku:
 * For this particular website, it was necessary to add, in Heroku an "Installed add-on" of "Heroku Postgress".
 11. Once all of the steps are complete, Heroku should be able to publish the website. 
 
-Steps to publish website to GitHub Pages:
+### Steps to publish website to GitHub Pages:
 1. On the main page of the repository, click settings.
 2. Go to the GitHub Pages section on the menu bar to the left.
 3. In the Source section, click "None" and change the selected branch to "main". 
 4. Leave the following option as (root), and click "Save"
 5. Once the repository is published, a link to the website will be shown in the GitHub Pages section. 
 
-To Clone this repository using IDE Terminal:
+### To Clone this repository using IDE Terminal:
 1. Navigate locally to the directory in which you want to save the repository.
 2. On the main page of the repository, click the "Code" button, and copy the HTTPS address.
 3. In the terminal, run the command: 'git clone' followed by the HTTPS address.
 4. The project will now be saved to the desired directory. 
 
-To Clone this repository using Visual Studio Code:
+### To Clone this repository using Visual Studio Code:
 1. Open a new window in VSCode.
 2. On the main page of the repository, click the "Code" button, and copy the HTTPS address.
 3. Back in VSCode, under "Start" click "clone repository" and paste the link into the textbox that pops up.
@@ -330,7 +330,7 @@ To Clone this repository using Visual Studio Code:
 5. The repository will now be saved to the selected location.
 
 
-Developing Locally:
+### Developing Locally:
 1. In VSCode, open a new terminal at the bottom of the page.
 2. In the terminal, type `python manage.py runserver`
 3. Once the command is submitted, a link should appear with the message: "Starting development server at ..."
@@ -338,7 +338,7 @@ Developing Locally:
 5. Note, if in the `settings.py` file, if `DEBUG` is set to `FALSE`, the development server will not work. For this command to work, `DEBUG` must be set to `TRUE`. Always remember to set it to `FALSE` before deploying it on Heroku.
 
 
-How to create a Superuser for admin responsibilities:
+### How to create a Superuser for admin responsibilities:
 1. Open a new terminal in VSCode
 2. Type `python manage.py create superuser`
 3. When prompted, type in a username and hit 'Enter'
