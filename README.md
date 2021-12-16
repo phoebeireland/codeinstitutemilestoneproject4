@@ -200,26 +200,37 @@ When a user makes a profile, they are able to save their contact details in a fo
 
 ### Shopping Bag Page
 * This page shows users what items are currently in their shopping bag waiting to be purchased, and gives them the option to either return to shopping or to proceed to checkout.
-* 
-* 
+* This page displays all of teh items that are in the shopping bag in a list row. From left to right, the row contains the picture of the product, the name of the product as well as the size (if applicable) and the SKU number. Following that is the price for the individual object,, the quantity of that object currently in the cart to be purchased and the subtotal price of the product, once the quantity of the object is taken into account. Below the quantity bar are the links to update the quantity of the product, and the link to remove the product entirely from the bag. This row structure is reiterated for every unique product that is currently being held in the bag.
+* Below the rows of products is the Bag total, the total price of tax, the total delivery cost and the Grand total of all of the items in the bag once the tax and delivery cost is added to the bag total.
+* Below the grand total is the button customers use to proceed to checkout or to go back and keep shoping.
+* On smaller screens, the list of items in the bag drops below the grand total and checkout buttons.
 
 
 ### Checkout Page
-* 
-* 
-* 
+* On the left side of this page is the form that users fill out with their personal information to complete the order. 
+* If the user has an account and is logged into the account and has made a purchase previously, then the personal details provided before are auto-filled into this form.
+* Below the information form is the Stripe input, where customers input their credit card information in order to pay for their purchases. 
+* Below the Stripe payment input area is are the buttons to either process the payment or to return to the previous page and to adjust the contents of the bag.
+* On the right side of the screen is a minimised version of the shopping bag. IT shows a user the product(s) that they are purchasing. It displays the image of the product, the individual price, and below the products it shows the total cost of the item(S).
+* Below the checkout button, in red text, is a warning to users reminding them how much money will be charged to the provided card if they opt to continue the transaction. 
+* Upon the correct submission of payment and when the user clicks to pay, the page shows a blue overlay to indicate that the payment is being processed. When the payment is successfully submitted, the user will get an email with the details of the order and payment.
+* On smaller screens, the elements stack such that the shopping bag description is on top of the personal details form and the payment area.
+
 
 
 ### Order Confirmation Page
-* 
-* 
-* 
+* This is the screen that users are directed to once their payment has been processed. 
+* This page contains a summary of their order. The information regarding shipment details is auto-filled from the information that the user filled out on the previous page.
+* Below the box with the summary is a button that the users can use to navigate back to the homepage of the website.
+* On smaller screens, the box containing the order summary is centered on the screen, and on really narrow screens, the contents of the box are stacked to fit the screen.
 
 
 ### Profile Page
-* 
-* 
-* 
+* If a user has a confirmed profile on the site, then this page can be used to update their shipping information or to view past orders.
+* The left side of the screen has the form to input the personal details. If information is filled out here, then on the checkout page, it is automatically loaded in the personal details form.
+* On the right side of the screen is a table with the previous orders made unders this account. The contents of the table, from left to right are: ORder number link, the date and specific time when the order was placed, the items that were in the order and the order total cost.
+* If a user clicks the order confirmation number link, then they are redirected back to the order confirmation page.
+* On smaller screens, the elements stack, and the information form is on top of the Order History area.
 
 
 
