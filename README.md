@@ -337,6 +337,17 @@ Developing Locally:
 4. Ctrl + click on the link to open the link in your browser
 5. Note, if in the `settings.py` file, if `DEBUG` is set to `FALSE`, the development server will not work. For this command to work, `DEBUG` must be set to `TRUE`. Always remember to set it to `FALSE` before deploying it on Heroku.
 
+
+How to create a Superuser for admin responsibilities:
+1. Open a new terminal in VSCode
+2. Type `python manage.py create superuser`
+3. When prompted, type in a username and hit 'Enter'
+4. When prompted, type in an email address and hit 'Enter'. Note, the email address does not need to be a real email address, but it does need to have the '@someplace.com' ending
+5. When prompted, type in a password and reconfirm the password by typing it in again.
+6. If the password is deemed 'too simple', you can still override this by typing 'y' and hitting 'Enter'.
+7. Once the superuser is created, you can login to the admin page on the website (that is running either locally or officially deployed), by adding `/admin` to the end of the url path at the top of the page. 
+8. Inside the admin dashboard, you can alter various elements of the website including adding or editing products or blog posts.
+
 # Credits
 
 Created by Phoebe Ireland
