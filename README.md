@@ -133,9 +133,13 @@ When a user makes a profile, they are able to save their contact details in a fo
 
 
 # Features
-* 
-* 
-*  
+* At the top of every page on the website, there is a Navbar which will allow users to easily navigate around the websites various pages, as well as a search bar that allows users to search for products in the store. 
+* At the top right-hand corner of all of the pages, there is a 'My Profile' icon and a 'Shopping Bag' icon. These are used to access a user's profile page and the logout link, if they are signed in, and the shopping bag in the current session. If a user is logged in and is a superuser, then the Profile icon dropdown menu will include an option called 'Product Management', which will allow the superuser to add a product to the store. 
+* At the bottom of every page on the website, there is a footer containing various social media links that allow a user to navigate to that page once clicked. At it is, there are no social media pages directly related to the created website, so the links will take a user to the generic homepage for all of the links. The links included are Facebook, Instagram and Github.
+* When the pages are viewd on smaller screens, all of the elements on the pages will stack on top of each other and the navbar will collapse. 
+* If a user is signed in as a superuser, then they will have options to edipt or delete products in the shopping area, or to add, edit or delete condolence blog posts.
+* In the shop, users have the option to choose the size of the product they are purchasing, if it is available in different sizes, and they are also able to change the number of items being added to the shopping basket, if the user wants to order multiple of the same item.
+* When a user adds a product to their bag, or alters their bag in any way, a message box pops up in the top right corner of their screen alerting them of the changes being made.
 
 ### The Home Page
 * 
