@@ -40,7 +40,7 @@ A Returning User to the site wants:
 
 ## Design Choices
 
-The overall feel of the Website should be somber and clean. As a lot of the code for the project was modeled after the Boutique Ado project that was shown in the Code Institute videos, styilistically, not much differs between that site and this funeral site. Obviously elements were altered to make the design fit a funeral website rather than a clothing and housewares shop, but the main style features remained largely the same. 
+The overall feel of the Website should be somber and clean. Styilistically, this project was inspired by the Boutique Ado project by Code Institute. 
 
 ### Font
 
@@ -52,30 +52,29 @@ The font used on this Website is Lato. Rather than picking a different, more fan
 The main colours used on the site are:
 * Black, for the colour of the profile and shopping icons at the top of the page, as well as some of the navigational buttons across the site.
 * Hex color `#555` for the remaining font present elsewhere on the site.
-* White, for the font on the buttons which have black backgrounds, as well as for the beneral background overlay colour on all of the pages that are not the `index.html` page.
+* White, for the font on the buttons which have black backgrounds or elsewhaere on the site that has a black background, as well as for the general background overlay colour on all of the pages that are not the `index.html` page.
 * `rgb(14, 221, 66)` for the color of the footer elements when they are not being hovered over, and `rgb(179, 1, 1)` for the footer elements when they are being hovered over.
 
 
 ### Styling
 
-The Website is built to be a funeral website. As such, loud, brash, and gaudy stylistic elements would be wildly inappropriate considering the purpose of the website. Due to this, the website has a clean and simple look that, with the white background and the grey font colour, aims to be reminiscent of a marble mausoleum. Due to the nature of most of the pages- since they contain a lot of important information, the only pages that retain the original background image on the site are the About page and the Homepage of teh website. It seemed most prudent to leave the rest of the pages with a simple white background, since certain pages- like the products page or the checkout page- contained information that was the main focus of the page, it felt as though leaving a background like that of the flower would only serve to distract the user, which would be detrimental to the functionality of the website. Funerals and death in general are somber matters, so to have a website that reflects the seriousness of the topic at hand seemed very important. An additional Django library was used to change alter the look of both the prices of products and the provided dates and times for the blog. The library used was [django.contrib.humanize](https://docs.djangoproject.com/en/3.2/ref/contrib/humanize). This was used to add commas to the individual and overall prices of products that were over a thousand dollars, as django did not automatically add one in. It also altered the dates on the blog posts that were automatically added when the post was submitted to the website. These changes were deemed necessary to improve the ease of viewing for any user, as they reflected a more natural way of processing the secific information provided.
+The Website is built to be a funeral website. As such, loud, brash, and gaudy stylistic elements would be wildly inappropriate considering the purpose of the website. Due to this, the website has a clean and simple look that, with the white background and the grey font colour, aims to be reminiscent of a marble mausoleum. Due to the nature of most of the pages - since they contain a lot of important information, the only pages that retain the original background image on the site are the About page and the Homepage of the website. It seemed most prudent to leave the rest of the pages with a simple white background, since certain pages - like the products page or the checkout page - contained information that was the main focus of the page, it felt as though leaving a background like that of the flower would only serve to distract the user, which would be detrimental to the functionality of the website. Funerals and death in general are somber matters, so to have a website that reflects the seriousness of the topic at hand seemed very important. An additional Django library was used to change the look of both the prices of products and the provided dates and times for the blog. The library used was [django.contrib.humanize](https://docs.djangoproject.com/en/3.2/ref/contrib/humanize). This was used to add commas to the individual and overall prices of products that were over a thousand dollars, as django did not automatically add one in. It also altered the dates on the blog posts that were automatically added when the post was submitted to the website. These changes were deemed necessary to improve the ease of viewing for any user, as they reflected a more natural way of processing the specific information provided.
 
 
 ## Wireframe Designs
-Provided additional information regarding the wireframes below each picture. Refer to them to explain where a wireframe may differ from the published product or for choices behind the designs.
-As will be noticed, as the site is modeled after the Boutique Ado project supplied by Code Institute, the wireframes provided reflect this. The pages in which they differ are the original pages- the blog pages and the blog comment pages. 
+Additional information regarding the wireframes provided below each picture. Refer to them to explain where a wireframe may differ from the published product or for choices behind the designs.
 
 
 ### Homepage
 ![Wireframe of the Homepage](static/wireframes/homepagewireframe.jpg "wireframe of the main hopmepage for the site")
 
-This image shows the initial idea for the main page of the website. This is the page that the users would see upon inital entry to the website. It is very similar to that of the Boutique Ado page. The places where they differ are in the contents of the navigation bar and the large image that is in the middle of the page.
+This image shows the initial idea for the main page of the website. This is the page that the users would see upon inital entry to the website. Just like the Boutique Ado project it uses a hero image and the website motto.
 
 ### General Products Page Design
 ![Wireframe of the Products page](static/wireframes/samplegeneralproductpage.jpg "wireframe of the product page for the site")
 
-This image shows the initial idea for all of the product pages on the site. Although the different products would be split into their own pages based on the different categories of products, there seemed to be no need to create a separate weireframe for every product catergory page, as they would all follow the same basic layout, as seen in this wireframe image. Each of the navbar elements would point to a different part of teh website to which the user would have access. As the main purpose of the website was for shopping, the majority of the links provided in the navbar were related to the products available for purchase. On the page itself, the user is presented with an image of the product being offered, as well as the price of the object and the name of the product. 
-Added later to the page, was the smaller dropdown menut that gave the user the ability to reorganize the products on the page based on ceratin criteria- such as ranking the products based on their price or alphabetically or by category. 
+This image shows the initial idea for all of the product pages on the site. Although the different products would be split into their own pages based on the different categories of products, there seemed to be no need to create a separate weireframe for every product catergory page, as they would all follow the same basic layout, as seen in this wireframe image. Each of the navbar elements would point to a different part of the website to which the user would have access. As the main purpose of the website was for shopping, the majority of the links provided in the navbar were related to the products available for purchase. On the page itself, the user is presented with an image of the product being offered, as well as the price of the object and the name of the product. 
+Added later to the page, was the smaller dropdown menu that gave the user the ability to reorganize the products on the page based on ceratin criteria - such as ranking the products based on their price or alphabetically or by category. 
 
 
 ### Product Detail Page Design
@@ -87,13 +86,13 @@ Similar to the way the general product page design did not change per product ca
 ### Condolences Blog Page Design
 ![Wireframe of the Condolences Blog page](static/wireframes/condolencesblogpage.jpg "wireframe of the condolences blog page for the site")
 
-The general design of the condolences blog was taken from the design provided on [Django Central](https://djangocentral.com/building-a-blog-application-with-django/). The blog page was simple, and adapted to fit the overall look of the Evergreen website to which it was being added. On this page, superusers would be able to add a blog post detailing the passing of a member of the community, and anyone who visited the site, regardless of whether or not they had an account on the website would be able to view the post and offer condolences on the specific post page. If the superuser is logged in, they also have the ability to edit or delete any blog post on the site. Those capabilites were available only to those users who were logged in as a superuser, and were provided as two small links under the main text of the post to which they related. This was another of the pages that used the [django.contrib.humanize](https://docs.djangoproject.com/en/4.0/ref/contrib/humanize/) filter. The `naturalday` filter was applied to the date on the blog post that indicated when each blog post was added to the website. This was added for ease of reading, as it changed the provided date from the strict date and time posted, to "yesterday" or "today" if the posts had been added ether the same day as it was being viewed, or on the previous day. 
+The general design of the condolences blog was taken from the design provided on [Django Central](https://djangocentral.com/building-a-blog-application-with-django/). The blog page was simple, and adapted to fit the overall look of the Evergreen website to which it was being added. On this page, superusers would be able to add a blog post detailing the passing of a member of the community, and anyone who visited the site, regardless of whether or not they had an account on the website would be able to view the post and offer condolences on the specific post page. If the superuser is logged in, they also have the ability to edit or delete any blog post on the site. Those capabilites were available only to those users who were logged in as a superuser, and were provided as two small links under the main text of the post to which they related. This was another of the pages that used the [django.contrib.humanize](https://docs.djangoproject.com/en/4.0/ref/contrib/humanize/) filter. The `naturalday` filter was applied to the date on the blog post that indicated when each blog post was added to the website. This was added for ease of reading, as it changed the provided date from the strict date and time posted, to "yesterday" or "today" if the posts had been added ether the same day as it was being viewed, or on the previous day. Past that, the date reverted to the day/month/year format
 
 
 ### Condolences Comment Page Design
 ![Wireframe of the Condolences comment page](static/wireframes/condolencescommentpage.jpg "wireframe of the condolences comment page for the site")
 
-The general design of the condolences comment page was taken from the design provided on [Django Central](https://djangocentral.com/building-a-blog-application-with-django/), and further expanded with the design and code provided on [this page](https://djangocentral.com/creating-comments-system-with-django/). This page has the full condolences message, as the general blog page only has the first few words of the message. The sidebar on the side has instructions on how to add a comment, and in the initial design, the comments form is underneath the sidebar, but in the final design the form ended up being under the comments area, which was under the initial condolences message. Similar to the Condolences page, the post page makes use of [django.contrib.humanize](https://docs.djangoproject.com/en/4.0/ref/contrib/humanize/)'s `naturalday` filter. to alter the timestamp on the comments that are added. One element of the comments form that came with the code that was taken from Django Central, was the fact that once a user pressees "submit", the comment is added to the database, and a superuser has to navigate to the admin dashboard in order to approve the message that was submitted. Although this may seem somewhat tedious, this seemed like a beneficial feature for the website to have, since it would allow the superuser to filter out any spam messages or other messages that could reflect badly on the site, since the blog pages are accessible to any person who accessed the site. 
+The comment page design was taken from the design provided on [Django Central](https://djangocentral.com/building-a-blog-application-with-django/), and further expanded with the design and code provided on [this page](https://djangocentral.com/creating-comments-system-with-django/). This page has the full condolences message, as the general blog page only has the first few words of the message. The sidebar on the side has instructions on how to add a comment, and in the initial design, the comments form is underneath the sidebar, but in the final design the form ended up being under the comments area, which was under the initial condolences message. Similar to the Condolences page, the post page makes use of [django.contrib.humanize](https://docs.djangoproject.com/en/4.0/ref/contrib/humanize/)'s `naturalday` filter to alter the timestamp on the comments that are added. One element of the comments form that came with the code that was taken from Django Central, was the fact that once a user presses "submit", the comment is added to the database, and a superuser has to navigate to the admin dashboard in order to approve the message that was submitted. This seemed tedious and was removed. Although the superuser is still able to to filter out any spam messages or other messages that could reflect badly on the site (since the blog pages are accessible to any person who accessed the site), by going to the admin dashboard. 
 
 
 ### About Us Page Design
@@ -110,7 +109,7 @@ This was the initial design for both the login in and the register account pages
 ### Shopping Bag Page Design
 ![Wireframe of the Shopping Bag page](static/wireframes/shoppingbagpage.jpg "wireframe of the Shopping Bag page for the site")
 
-The design from this page was a simple shopping bag. It displays to the user the items which are currently in their shopping bag waiting to be purchased, and at the bottom of the page offers them the ability to proceed to checkout and purchase their items. The items that are currently in the bag are displayed as a list. The picutre corresponding to the product is displayed, as well as the price of the object (the price may be modified if multiple of the same item are in the shopping bag), the name of the item and the quantity to be bought. 
+The design from this page was a simple shopping bag. It displays to the user the items which are currently in their shopping bag waiting to be purchased, and at the bottom of the page offers them the ability to proceed to checkout and purchase their items. The items that are currently in the bag are displayed as a list. The picture corresponding to the product is displayed, as well as the price of the object (the price may be modified if multiple of the same item are in the shopping bag), the name of the item and the quantity to be bought. 
 
 
 ### Checkout Page Design
@@ -122,7 +121,7 @@ This page offers a form into which a user can enter their billing and shipping i
 ### Order Confirmation Page Design
 ![Wireframe of the Order Confirmation page](static/wireframes/orderconfirmationpage.jpg "wireframe of the Order Confirmation page for the site")
 
-This page displays the order summary to the user once their payment has been processed. The page is fairly simple, as the only contents present on the page is a summary list of the purchase that was just made. Due to the simplicity of the page and the function it was built to perform, the design for this page was also take directly from the Boutique Ado project.
+This page displays the order summary to the user once their payment has been processed. The page is fairly simple, as the only contents present on the page is a summary list of the purchase that was just made. Due to the simplicity of the page and the function it was built to perform, the design for this page was also taken directly from the Boutique Ado project.
 
 
 ### Profile Page Design
@@ -143,14 +142,14 @@ When a user makes a profile, they are able to save their contact details in a fo
 
 ### The Home Page
 * This page is the first page that the users see upon entering the site, and contains a searchbar at the top and a navbar that can be used to go to different pages on the site.
-* The navbar is a dropdown navbar that expands to give even more specific options for pages for the user to visit. For example, the "Urns and Coffints" navbar link expands to allow the user to go to the specific "Urns" page or the "Coffins" Page, or the "Miscellaneous" page.
-* There are also the two icons that lead users to the login and register pages to createe or login to their profile, and to access the shopping bag with all of their current purchases. 
+* The navbar is a dropdown navbar that expands to give even more specific options for pages for the user to visit. For example, the "Urns and Coffins" navbar link expands to allow the user to go to the specific "Urns" page or the "Coffins" Page, or the "Miscellaneous" page.
+* There are also the two icons that lead users to the login and register pages to create or login to their profile, and to access the shopping bag with all of their current purchases. 
 * The middle of the screen is fairly simple, with a large background image and a single quote. There is also a button that will direct a user to the shop, so that they can browse the products that are available.
 * On smaller screens, the navbar will collapse and the elements at the top of the page will stack.
 
 
 ### Products Page
-* The general design of the product pages is the same across all of teh different category pages. At the top of the page is a header that specifies which of the pages the user is currently on (ie. the Urns page, or Products Page). 
+* The general design of the product pages is the same across all of the different category pages. At the top of the page is a header that specifies which of the pages the user is currently on (ie. the Urns page, or Products Page). 
 * The page contains a clickable image of the product that can be used to go to the prodcut details page. 
 * Underneath the image of the product is the name of the specific product, and the sales price, without tax added.
 * The page contains information for all of the products that are relevant to the category specified. 
@@ -162,15 +161,15 @@ When a user makes a profile, they are able to save their contact details in a fo
 ### Product Detail Page
 * On the left side of this page is a larger image of the product being looked at, and on the right side of the page are further details about the product.
 * There is a short description of the product being viewed, as well as restating the name of the product as well as the price of the object. 
-* Below the product description is the dropdown menu that allows a user to change the size of teh product they are interesting in purchasing.
+* Below the product description is the dropdown menu that allows a user to change the size of the product they are interesting in purchasing.
 * Below the size, is the quantity adjuster, where a user can opt to add more than one of the same items to their shopping bag. 
-* Once the user has selected the size and quantity of the product, there is a button that allows th user to add the item(s) to their bag.
-* One an item is added to the bag, a message in the top right corner of their screen pops up and lets the user know that the item was added successfully to their bag.
+* Once the user has selected the size and quantity of the product, there is a button that allows the user to add the item(s) to their bag.
+* Once an item is added to the bag, a message in the top right corner of their screen pops up and lets the user know that the item was added successfully to their bag.
 * On smaller screens, the elements collapse to fit the smaller screen.
 
 
 ### Condolences Blog Page
-* This blog has a main column with the blog posts, and a small sidebar with instructions on how to add a condeolence comment to the specific blog psot.
+* This blog has a main column with the blog posts, and a small sidebar with instructions on how to add a condeolence comment to the specific blog post.
 * If a user is a superuser, at the bottom of each blog preview, there are two links to edit or delete the blog post. 
 * If a user is a superuser, there is a button beneath the sidebar that allows them to add a post without having to go all the way to the admin dashboard. These buttons and links are not available if the user is not logged into the superuser account.
 * The blog posts that are added to the blog are shown on this page in cards that offer a short excerpt of the text of the full post as well as a the name of the poster, and the date on which the post was added to the blog.
@@ -192,7 +191,7 @@ When a user makes a profile, they are able to save their contact details in a fo
 
 
 ### Login/ Register Page
-* The login and register pages are very similar in design. The main difference between the two is that the Register page has more form entry fields than the login form. The login form asks for the username and password associate with the account, while the register page asks for an email address too.
+* The login and register pages are very similar in design. The main difference between the two is that the Register page has more form entry fields than the login form. The login form asks for the username and password associated with the account, while the register page asks for an email address too.
 * The login page also has a message at the top of the login form that says that if a person is trying to login but does not yet have an account, that they need to sign up first. The words "sign up" in the message are a link that will redirect the user to the register page.
 * The register page also has a message at the top of the register form that says that if a person is trying to register a new account but already has an account, then they should go to the sign in page. The words "sign in" are a link that redirects the user to the login page.
 * On smaller screens, the navbar collapses and the form centers on the page to fit a smaller screen.
@@ -200,7 +199,7 @@ When a user makes a profile, they are able to save their contact details in a fo
 
 ### Shopping Bag Page
 * This page shows users what items are currently in their shopping bag waiting to be purchased, and gives them the option to either return to shopping or to proceed to checkout.
-* This page displays all of teh items that are in the shopping bag in a list row. From left to right, the row contains the picture of the product, the name of the product as well as the size (if applicable) and the SKU number. Following that is the price for the individual object,, the quantity of that object currently in the cart to be purchased and the subtotal price of the product, once the quantity of the object is taken into account. Below the quantity bar are the links to update the quantity of the product, and the link to remove the product entirely from the bag. This row structure is reiterated for every unique product that is currently being held in the bag.
+* This page displays all of the items that are in the shopping bag in a list row. From left to right, the row contains the picture of the product, the name of the product as well as the size (if applicable) and the SKU number. Following that is the price for the individual object,, the quantity of that object currently in the cart to be purchased and the subtotal price of the product, once the quantity of the object is taken into account. Below the quantity bar are the links to update the quantity of the product, and the link to remove the product entirely from the bag. This row structure is reiterated for every unique product that is currently being held in the bag.
 * Below the rows of products is the Bag total, the total price of tax, the total delivery cost and the Grand total of all of the items in the bag once the tax and delivery cost is added to the bag total.
 * Below the grand total is the button customers use to proceed to checkout or to go back and keep shoping.
 * On smaller screens, the list of items in the bag drops below the grand total and checkout buttons.
@@ -211,7 +210,7 @@ When a user makes a profile, they are able to save their contact details in a fo
 * If the user has an account and is logged into the account and has made a purchase previously, then the personal details provided before are auto-filled into this form.
 * Below the information form is the Stripe input, where customers input their credit card information in order to pay for their purchases. 
 * Below the Stripe payment input area is are the buttons to either process the payment or to return to the previous page and to adjust the contents of the bag.
-* On the right side of the screen is a minimised version of the shopping bag. IT shows a user the product(s) that they are purchasing. It displays the image of the product, the individual price, and below the products it shows the total cost of the item(S).
+* On the right side of the screen is a minimised version of the shopping bag. It shows a user the product(s) that they are purchasing. It displays the image of the product, the individual price, and below the products it shows the total cost of the item(s).
 * Below the checkout button, in red text, is a warning to users reminding them how much money will be charged to the provided card if they opt to continue the transaction. 
 * Upon the correct submission of payment and when the user clicks to pay, the page shows a blue overlay to indicate that the payment is being processed. When the payment is successfully submitted, the user will get an email with the details of the order and payment.
 * On smaller screens, the elements stack such that the shopping bag description is on top of the personal details form and the payment area.
@@ -228,7 +227,7 @@ When a user makes a profile, they are able to save their contact details in a fo
 ### Profile Page
 * If a user has a confirmed profile on the site, then this page can be used to update their shipping information or to view past orders.
 * The left side of the screen has the form to input the personal details. If information is filled out here, then on the checkout page, it is automatically loaded in the personal details form.
-* On the right side of the screen is a table with the previous orders made unders this account. The contents of the table, from left to right are: ORder number link, the date and specific time when the order was placed, the items that were in the order and the order total cost.
+* On the right side of the screen is a table with the previous orders made unders this account. The contents of the table, from left to right are: Order number link, the date and specific time when the order was placed, the items that were in the order and the order total cost.
 * If a user clicks the order confirmation number link, then they are redirected back to the order confirmation page.
 * On smaller screens, the elements stack, and the information form is on top of the Order History area.
 
@@ -242,7 +241,7 @@ All HTML pages and CSS files were tested using the HTML and CSS Validator from W
 * Link to the [HTML Validator](https://validator.w3.org./) used
 * Link to the [CSS Validator](https://jigsaw.w3.org/css-validator/) used
 
-As the HTML pages on VSCode were written in Django, this made validating the code with the validators significatly more difficult. To get around this, I right-clicked on each page and selected the option 'view page source' and submitted it to the HTML validator.
+As the HTML pages on VSCode were written in Django, this made validating the code with the validators significatly more difficult. To get around this, I used the 'Validate by URI' option and submitted the link from the deployed version to the HTML validator.
 
 
 ## Manual Testing
@@ -261,7 +260,7 @@ Using the Chrome Inspect tool, the following aspects of the website were tested:
 
 ## Testing User Stories
 ### New User:
-1. Upon entering the webiste, a navbar is clearly visible at the top of the page, and is accessible across all of the pages of the website. IN addition, there is a search bar at the top of the page which can take a user to a specific product or group of products, based on what the y type intyo the search box.
+1. Upon entering the webiste, a navbar is clearly visible at the top of the page, and is accessible across all of the pages of the website. In addition, there is a search bar at the top of the page which can take a user to a specific product or group of products, based on what the user types into the search box.
 2. The shop is available through both the main page via the "Visit Shop" button in the middle of the page, and through the various links in the navbar. Also, specific categories of products are available in the navbar, which allows a user to go to specific groups of products, rather than having to sort through the entire list of the products every time.
 3. There is "More Info" option in the navbar that can be used to take the user to the "About Us and Our Team" page, where the user can read about the funeral home and those who work in it.
 4. The majority of the navbar is dedicated to the products available for purchase. The navbar is separated into dropdown links where the user can either go to a specific category of products or to the general list of all products available on the site. With five different categories of products available, the user has a wide range of options to choose from. 
@@ -270,19 +269,19 @@ Using the Chrome Inspect tool, the following aspects of the website were tested:
 7. At the top right corner of the screen is the "My Account" icon, where users can open a dropdown menu and register a new account if they had no previously created one. This option is only available to users who do not have an account, since once a user is logged in, the menu options change to reflect the fact that the user is logged in.
 
 ### Returning User
-1. The top right corner is the "My Account" dropdown menu. This is the same menu that was used to login to the account. Once the user is logged in, they can click the menu area again, and the menu options will have changed to "My Profile" and "Logout". (If the user is a superuser, then the menu will also have the "Product Management" option). to get to the uer's profile, all that person needs to do is to click on the "My Profile" option, and they'll be taken to their profile page.
+1. The top right corner is the "My Account" dropdown menu. This is the same menu that was used to login to the account. Once the user is logged in, they can click the menu area again, and the menu options will have changed to "My Profile" and "Logout". (If the user is a superuser, then the menu will also have the "Product Management" option). to get to the user's profile, all that person needs to do is to click on the "My Profile" option, and they'll be taken to their profile page.
 2. Within the profile page for the logged-in user, on the right side of the screen they will be able to see a "Order History" section that contains a table with all of their previous orders. The table contais the order number, which is a link that can be used to go to the full order summary, the date when the order weas made and the items that were in the order as well as the total cost of the order.
 3. In the user profile page, on the left side of the screen, there is a contact form that can be filled in by the user with their personal details. If a user fills in their details prior to an order being placed, then the information they submit will be auto-filled in the checkout page whenever they do make an order. This information can be submitted via that "Update Information" button below the form. If the user who is logged in makes a purchase before going to visit their profile page, then whatever information that they filled out in the checkout form will be automatically added to the personal information form on the profile page.
-4. If a user has visited the site before and is looking for a specific product and does not want to scroll through all of the pages of products on the site, at the top of the page, there is a search bar (or search icon) into which the user can type either the exact name of the product or the name of teh category of the product, if the specific name does not come to mind. 
-5. Once on a product page in the shop, a user can sort the items on the screen by price or by name by clicking the small dropdown menu at the top of the list of items and clicking the specific reorganization criteria that they want. With this menu, a user can reoganise the products by their price, either ascending or descending, or alphabetiacally, either A-Z or Z-A. 
+4. If a user has visited the site before and is looking for a specific product and does not want to scroll through all of the pages of products on the site, at the top of the page, there is a search bar (or search icon) into which the user can type either the exact name of the product or the name of the category of the product, if the specific name does not come to mind. 
+5. Once on a product page in the shop, a user can sort the items on the screen by price or by name by clicking the small dropdown menu at the top of the list of items and clicking the specific reorganization criteria that they want. With this menu, a user can reoganise the products by their price, either ascending or descending, or alphabetically, either A-Z or Z-A. 
 
 ## Small Problems (that were fixed)
 * In the HTML Validator, it throws an error stating that `id="user-options` is stated twice. This is due to the fact that on the `base.html` page there is a line that calls the `mobile_top_header.html` file. In the rendered html code, this creates two of the same headers, which is why the id turns up twice. To fix this issue, I simply renamed the label in the `mobile_top_header.html`, and the error went away.
 * The Footer refused to stay at the bottom of the page on pages where there was not a lot of content. This was fixed by Googling, and landing on [this page](https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14). As shown on the page, adding `min-height: 100vh`, `display:flex`, `flex-direction:column` and `margin-top:auto` to the `body` and `footer` styles in `style.css` fixed the problem. It was important to retain the original `height: calc(100vh - 164px);`, otherwise the page looked really weird.
-* While trying to deploy the website, it was exceedingly difficult to establish a connection between Django, AWS and Heroku. After several days trying to fix this issue and several calls with the tutoring service and a session with my mentor, the solution to get around this issue was to +use URLs to store the product images. As it was any images that were uploaded to the site directly from a file in the media file was sinply not staying once the website weas deployed again. If a version of the website was deployed and then the image was uploaded via the admin dashboard or the product management page after the deployment, it would show up. However if something was altered in the code and changes were pushed to GitHub and a new version was deployed on Heroku, the images would disappear and would then have to be re-uploaded all over again. The solution that ended up fixing this issue was suggested by my mentor, and involved using GitHub to store the images securely and to call them with the Github URL. (A previous attempt to fix the issued involved using Whitenoise) To do this, when an image was added to the site, I uploaded it to GitHub. Once It was uploaded, I went to the image in GitHub and opened the image in a new tab that containted only the image. Then I copy and pasted the link that was at the top of the webpage into the Product management form where the "Image url" form entry area was. This fixed the issue. The only alteration that needed to be made on the code side was that all references to `item.image.url` had to be changed to `item.image_url`. Once this was fixed, the images stayed on the site regardless of whether the wwebsite was redeployed after the image was uploaded.
-* For awhile the Order confirmation emails were not sending. This issue arose becasuse the Stripe webhooks had been disabled and were not working at all. This was fixed by going back into Stripe and making a new webhook endpoint with the new deployed website link. Once the new link had bee nuploaded and the new endpoint was made,  Ichanged all instances of the old Stripe webhook secret key and the webhooks weorked again, and the order confirmation emails were sent properly.
+* While trying to deploy the website, it was exceedingly difficult to establish a connection between Django, AWS and Heroku. After several days trying to fix this issue and several calls with the tutoring service and a session with my mentor, the solution to get around this issue was to use URLs to store the product images. As it was any images that were uploaded to the site directly from a file in the media file was sinply not staying once the website weas deployed again. If a version of the website was deployed and then the image was uploaded via the admin dashboard or the product management page after the deployment, it would show up. However if something was altered in the code and changes were pushed to GitHub and a new version was deployed on Heroku, the images would disappear and would then have to be re-uploaded all over again. The solution that ended up fixing this issue was suggested by my mentor, and involved using GitHub to store the images securely and to call them with the Github URL. (A previous attempt to fix the issued involved using Whitenoise) To do this, when an image was added to the site, I uploaded it to GitHub. Once It was uploaded, I went to the image in GitHub and opened the image in a new tab that containted only the image. Then I copy and pasted the link that was at the top of the webpage into the Product management form where the "Image url" form entry area was. This fixed the issue. The only alteration that needed to be made on the code side was that all references to `item.image.url` had to be changed to `item.image_url`. Once this was fixed, the images stayed on the site regardless of whether the website was redeployed after the image was uploaded.
+* For awhile the Order confirmation emails were not sending. This issue arose because the Stripe webhooks had been disabled and were not working at all. This was fixed by going back into Stripe and making a new webhook endpoint with the new deployed website link. Once the new link had been uploaded and the new endpoint was made, I changed all instances of the old Stripe webhook secret key and the webhooks worked again, and the order confirmation emails were sent properly.
 * For awhile the favicon was not showing up, despite a favicon being uploaded to the files. This was fixed by changing the path that was being used to call the favicon to the page to add `/static/` prior to  calling the favicon file name.
-* When the website first deployed, the entire site borke and would only show a `MIME type Error`. After extensive Googling, I found the solution in a Stack Overflow page. The specific url to the page secapes me, but since the deployment service being used was Heroku, the fix that worked for me was `pip install django-heroku`. 
+* When the website first deployed, the entire site broke and would only show a `MIME type Error`. After extensive Googling, I found the solution in a Stack Overflow page. The specific url to the page escapes me, but since the deployment service being used was Heroku, the fix that worked for me was `pip install django-heroku`. `pip install django-heroku` this installs extensions to Django that are required for deploying specifically on Heroku.
 
 
 # Deployment
@@ -294,11 +293,12 @@ Steps to publish website to Heroku:
 3. Once the page has loaded, under the "Deploy" menu, select "Connect to GitHub", and enter the name of the repository to connect it to Heroku. 
 4. Once it is connected, either choose "Automatic deploys" or "Manual deploy" and choose the branch that Heroku will deploy from. 
 5. Make sure that there is a Procfile in the root of the directory. If there is not, create a new file and name it `Procfile`, making sure that the first letter is capitalised, otherwise Heroku will not register the file correctly. 
-6. Within the Procfile, type: `web: python app.py`. This will tell Heroku exactly what the process type is (in this case it's `web`) and what the command is (`python app.py`)
+6. Within the Procfile, type: `web: gunicorn evergreen.wsgi:application`. This will tell Heroku exactly what the process type is (in this case it's `web`) and what the command is (`gunicorn evergreen.wsgi:application`)
 7. Once the Procfile is created and filled in, push the change to the branch on GitHub that was specified as being the branch to deploy from. If automatic deploys were enabled, Heroku will automatically deploy the changes any time alterations are made to the deployed branch. If Manual deploys were used, you will have to manually deploy every time a large change is made. 
-8. Another necessary step is to add the information that is in the `env.py` file to the "Config Vars" section in Heroku. This is necessray, because since the `env.py` file is in a `.gitignore`, it is ignored by GitHub, and therefore is not accessible to Heroku.
+8. Another necessary step is to add the information that is in the `.env` file to the "Config Vars" section in Heroku. This is necessray, because since the `.env` file is in a `.gitignore`, it is ignored by GitHub, and therefore is not accessible to Heroku.
 9. To add the information to the Config Vars, open the "Settings" section on the app page. Once opened, scroll down to the "Config Vars" area and click on "Reveal Config Vars".
-10. Here, you will see two text boxes that say "Key" and "Value" respectively. Into the "Key" side, enter `SECRET_KEY`, `IP`, `PORT`, `MONGO_URI` and `MONGO_DBNAME`. On the "Value" side of each pair, enter the value stated in the `env.py` file and press the "add" button to add each pair. 
+10. Here, you will see two text boxes that say "Key" and "Value" respectively. Into the "Key" side, enter the relevant Keys. On the "Value" side of each pair, enter the value stated in the `.env` file and press the "add" button to add each pair. 
+* For this particular website, it was necessary to add, in Heroku an "Installed add-on" of "Heroku Postgress".
 11. Once all of the steps are complete, Heroku should be able to publish the website. 
 
 Steps to publish website to GitHub Pages:
@@ -322,6 +322,13 @@ To Clone this repository using Visual Studio Code:
 5. The repository will now be saved to the selected location.
 
 
+Developing Locally:
+1. In VSCode, open a new terminal at the bottom of the page.
+2. In the terminal, type `python manage.py runserver`
+3. Once the command is submitted, a link should appear with the message: "Starting development server at ..."
+4. Ctrl + click on the link to open the link in your browser
+5. Note, if in the `settings.py` file, if `DEBUG` is set to `FALSE`, the development server will not work. For this command to work, `DEBUG` must be set to `TRUE`. Always remember to set it to `FALSE` before deploying it on Heroku.
+
 # Credits
 
 Created by Phoebe Ireland
@@ -330,7 +337,7 @@ The content of this website was created by Phoebe Ireland, with the exception of
 * [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/)
   * Used for the images found on the site
 * [Bootstrap](https://getbootstrap.com/)
-  * Used to create the majority of the elements in the website including teh navbar and the footer
+  * Used to create the majority of the elements in the website including the navbar and the footer
 * [favicon.io](https://favicon.io/)
   * Used to create the favicon
 * [jQuery](https://jquery.com/)
