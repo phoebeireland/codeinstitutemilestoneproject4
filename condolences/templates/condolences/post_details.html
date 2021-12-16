@@ -49,8 +49,6 @@
         <div class="col-md-8 card mb-4  mt-3 ">
             <div class="card-body">
               <!-- comments -->
-              <h2>{{ comments.count }} comments</h2>
-      
               {% for comment in comments %}
               <div class="comments" style="padding: 10px;">
                 <p class="font-weight-bold">
@@ -72,7 +70,7 @@
                 Your comment has been posted
               </div>
               {% else %}
-              <h3>Leave a comment</h3>
+              <h3>Leave a message of condolence</h3>
               <form method="post" style="margin-top: 1.3em;">
                 {{ comment_form.as_p }}
                 {% csrf_token %}
