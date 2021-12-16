@@ -231,7 +231,7 @@ All HTML pages and CSS files were tested using the HTML and CSS Validator from W
 * Link to the [HTML Validator](https://validator.w3.org./) used
 * Link to the [CSS Validator](https://jigsaw.w3.org/css-validator/) used
 
-As the HTML pages on VSCode were written in Django, this made validating the code with the validators significatly more difficult. To get around this, I opened each page and copied over the link for the deployed page and submitted it to the HTML validator.
+As the HTML pages on VSCode were written in Django, this made validating the code with the validators significatly more difficult. To get around this, I right-clicked on each page and selected the option 'view page source' and submitted it to the HTML validator.
 
 
 ## Manual Testing
@@ -243,6 +243,8 @@ Using the Chrome Inspect tool, the following aspects of the website were tested:
 * The text within the blog boxes were all still correctly centered on smaller screens just as they were on the larger ones. 
 * On the About page, the two card stacked properly when the page was viewed on a smaller screen.
 * The blog post cards all stacked and minimised correctly when viewed on a smaller screen.
+* The remove link in the shopping bag does remove the indicated item from the bag entirely.
+* The quantity buttons work to either increase or decrease the number of the selected item, and cannot be lowered past 1.
 
 
 
@@ -264,7 +266,7 @@ Using the Chrome Inspect tool, the following aspects of the website were tested:
 5. The ability to sort the products based on certaion criteria. (ie. by price or name)
 
 ## Small Problems (that were fixed)
-* 
+* In the HTML Validator, it throws an error stating that `id="user-options` is stated twice. This is due to the fact that on the `base.html` page there is a line that calls the `mobile_top_header.html` file. In the rendered html code, this creates two of the same headers, which is why the id turns up twice. To fix this issue, I simply renamed the label in the `mobile_top_header.html`, and the error went away.
 * The Footer refused to stay at the bottom of the page on pages where there was not a lot of content. This was fixed by Googling, and landing on [this page](https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14). As shown on the page, adding `min-height: 100vh`, `display:flex`, `flex-direction:column` and `margin-top:auto` to the `body` and `footer` styles in `style.css` fixed the problem. It was important to retain the original `height: calc(100vh - 164px);`, otherwise the page looked really weird.
 
 
