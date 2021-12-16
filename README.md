@@ -71,6 +71,17 @@ As will be noticed, as the site is modeled after the Boutique Ado project suppli
 
 This image shows the initial idea for the main page of the website. This is the page that the users would see upon inital entry to the website. It is very similar to that of the Boutique Ado page. The places where they differ are in the contents of the navigation bar and the large image that is in the middle of the page.
 
+### General Products Page Design
+![Wireframe of the Products page](static/wireframes/samplegeneralproductpage.jpg "wireframe of the product page for the site")
+
+This image shows the initial idea for all of the product pages on the site. Although the different products would be split into their own pages based on the different categories of products, there seemed to be no need to create a separate weireframe for every product catergory page, as they would all follow the same basic layout, as seen in this wireframe image. Each of the navbar elements would point to a different part of teh website to which the user would have access. As the main purpose of the website was for shopping, the majority of the links provided in the navbar were related to the products available for purchase. On the page itself, the user is presented with an image of the product being offered, as well as the price of the object and the name of the product. 
+Added later to the page, was the smaller dropdown menut that gave the user the ability to reorganize the products on the page based on ceratin criteria- such as ranking the products based on their price or alphabetically or by category. 
+
+
+### Product Detail Page Design
+![Wireframe of the Products page](static/wireframes/productdetailspage.jpg "wireframe of the product page for the site")
+
+Similar to the way the general product page design did not change per product catergory, the product details page remained the same for every product on the site. This page was split into two halves. The left half of the screen was dedicated to a larger image of the product, while the right half of the screen was dedicated to a short description of the product, as well as it name and the 'add to cart' option for the user. If a product was availble in different sizes, then the option to choose the size that the customer wanted to purchase was available would be visible.
 
 
 # Features
@@ -105,13 +116,20 @@ Using the Chrome Inspect tool, the following aspects of the website were tested:
 
 ## Testing User Stories
 ### New User:
-1. 
-2. 
+1. An easily navigatable website and shopping area
+2. The ability to buy products for an upcoming funeral
+3. An area to find out a bit of information about the funeral home and those who work in it
+4. A nice arrangement of product options
+5. The ability to see what services are coming up, and offer condolences to those who died
+6. The ability to pay on the website itself, and be able to recieve confirmation emails regarding the order
+7. The ability to create an account to keep track of any purchases made
 
 ### Returning User
-1. 
-2. 
-
+1. An easily navigatable website so I can find my created profile
+2. The ability to look back on previous orders that were made
+3. The ability to save contact/delivery details for an easier checkout in the future
+4. The ability to search for a product or category of products if the specific name of a previously found product escapes my mind
+5. The ability to sort the products based on certaion criteria. (ie. by price or name)
 
 ## Small Problems (that were fixed)
 * 
