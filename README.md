@@ -58,12 +58,12 @@ The main colours used on the site are:
 
 ### Styling
 
-The Website is built to be a funeral website. As such, loud, brash, and gaudy stylistic elements would be wildly inappropriate considering the purpose of the website. Due to this, the website has a clean and simple look that, with the white background and the grey font colour, aims to be reminiscent of marble. Funerals and death in general are somber matters, so to have a website that reflects the seriousness of the topic at hand seemed very important. An additional Django library was used to change alter the look of both the prices of products and the provided dates and times for the blog. The library used was [django.contrib.humanize](https://docs.djangoproject.com/en/3.2/ref/contrib/humanize). This was used to add commas to the individual and overall prices of products that were over a thousand dollars, as django did not automatically add one in. It also altered the dates on the blog posts that were automatically added when the post was submitted to the website. These changes were deemed necessary to improve the ease of viewing for any user, as they reflected a more natural way of processing the secific information provided.
+The Website is built to be a funeral website. As such, loud, brash, and gaudy stylistic elements would be wildly inappropriate considering the purpose of the website. Due to this, the website has a clean and simple look that, with the white background and the grey font colour, aims to be reminiscent of a marble mausoleum. Due to the nature of most of the pages- since they contain a lot of important information, the only pages that retain the original background image on the site are the About page and the Homepage of teh website. It seemed most prudent to leave the rest of the pages with a simple white background, since certain pages- like the products page or the checkout page- contained information that was the main focus of the page, it felt as though leaving a background like that of the flower would only serve to distract the user, which would be detrimental to the functionality of the website. Funerals and death in general are somber matters, so to have a website that reflects the seriousness of the topic at hand seemed very important. An additional Django library was used to change alter the look of both the prices of products and the provided dates and times for the blog. The library used was [django.contrib.humanize](https://docs.djangoproject.com/en/3.2/ref/contrib/humanize). This was used to add commas to the individual and overall prices of products that were over a thousand dollars, as django did not automatically add one in. It also altered the dates on the blog posts that were automatically added when the post was submitted to the website. These changes were deemed necessary to improve the ease of viewing for any user, as they reflected a more natural way of processing the secific information provided.
 
 
 ## Wireframe Designs
 Provided additional information regarding the wireframes below each picture. Refer to them to explain where a wireframe may differ from the published product or for choices behind the designs.
-As will be noticed, as the site is modeled after the Boutique Ado project supplied by Code Institute, the wireframes provided reflect this. The pages in which they differ are the original pages- the blog pages and the blog comment pages.
+As will be noticed, as the site is modeled after the Boutique Ado project supplied by Code Institute, the wireframes provided reflect this. The pages in which they differ are the original pages- the blog pages and the blog comment pages. 
 
 
 ### Homepage
@@ -110,17 +110,25 @@ This was the initial design for both the login in and the register account pages
 ### Shopping Bag Page Design
 ![Wireframe of the Shopping Bag page](static/wireframes/shoppingbagpage.jpg "wireframe of the Shopping Bag page for the site")
 
+The design from this page was a simple shopping bag. It displays to the user the items which are currently in their shopping bag waiting to be purchased, and at the bottom of the page offers them the ability to proceed to checkout and purchase their items. The items that are currently in the bag are displayed as a list. The picutre corresponding to the product is displayed, as well as the price of the object (the price may be modified if multiple of the same item are in the shopping bag), the name of the item and the quantity to be bought. 
+
 
 ### Checkout Page Design
 ![Wireframe of the Checkout page](static/wireframes/checkoutpage.jpg "wireframe of the Checkout page for the site")
+
+This page offers a form into which a user can enter their billing and shipping information and then submit payment to Stripe near the bottom of the page. On the side of the page, the user is still able to see the products that they are purchasing. This is one of the plages which pulls its design directly from the Boutique Ado project. If a user has a profile on the website, then their contact information is taken from the form on the profile page and is auto-filled into the contact form here.
 
 
 ### Order Confirmation Page Design
 ![Wireframe of the Order Confirmation page](static/wireframes/orderconfirmationpage.jpg "wireframe of the Order Confirmation page for the site")
 
+This page displays the order summary to the user once their payment has been processed. The page is fairly simple, as the only contents present on the page is a summary list of the purchase that was just made. Due to the simplicity of the page and the function it was built to perform, the design for this page was also take directly from the Boutique Ado project.
+
 
 ### Profile Page Design
 ![Wireframe of the Profile page](static/wireframes/profilepage.jpg "wireframe of the profile page for the site")
+
+When a user makes a profile, they are able to save their contact details in a form on the left-hand side of the page, and they are able to review their previous orders on the right-hand side of the page. These elements were taken directly from the Boutique Ado project. The profile page's function is simple. It merely allows a registered user to view past orders that were made and to save their information to the site for a faster checkout in the future. The deisgn for this page was also modeled from the code in the Bouqitue Ado project.
 
 
 
@@ -218,22 +226,24 @@ To Clone this repository using Visual Studio Code:
 Created by Phoebe Ireland
 
 The content of this website was created by Phoebe Ireland, with the exception of the following:
-* [Unsplash](https://unsplash.com/)
+* [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/)
   * Used for the images found on the site
 * [Bootstrap](https://getbootstrap.com/)
-  * Used to create the Navbar and the footer
+  * Used to create the majority of the elements in the website including teh navbar and the footer
 * [favicon.io](https://favicon.io/)
   * Used to create the favicon
 * [jQuery](https://jquery.com/)
   * Uses jQuery for various Bootstrap functions 
-* Code Institute's Task Manager Project
-  * Used to model most of the code for the site.
-* [Emailjs](https://www.emailjs.com/)
-  * Used to connect the contact form to an email service. This is the main instance of JavaScript on the website.
 * [Balsamiq](https://balsamiq.com/)
   * Used to create the wireframes.
 * [Code Institute Boutique Ado Project](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
   * Used to model all of the main shop code for the funeral website.
+* [Django Central Blog](https://djangocentral.com/building-a-blog-application-with-django/) and [Django Central Comments](https://djangocentral.com/creating-comments-system-with-django/)
+  * Used to create the blog and comments elemnt of the blog for the COndolences pages
+* [Django Project](https://docs.djangoproject.com/en/4.0/ref/contrib/humanize/)
+  * Used to find the `django.contrib.humanize` code to apply the humanize filters to the prices and the dates
+* [Stripe](https://stripe.com/)
+  * To process the payments that are made on the site
 
 
    All of the content that was taken from other sources was altered to fit the use of this website where necessary.
